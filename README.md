@@ -13,8 +13,8 @@ Backups are named by environement and date of creation for example ***ctmtest1_2
 In case that some calendars will be accidentaly deleted you can go to Control-M server, navigate to /ctm_stor/calendars_backup and under ctmuser execute command below: 
 
  
-```
-ctm deploy calendars.json -a "subject=Deploying calendars&description=Deploying calendars" 
+```Bash
+ctm deploy calendars.json -a "subject=Deploying calendars&description=Deploying calendars"
 ```
  
 
