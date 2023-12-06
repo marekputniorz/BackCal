@@ -2,8 +2,8 @@
 Solution for backup of calendars in Control-M application. 
 
 
-In case that some calendars will be accidentaly deleted we developed API solution for backup of calendars. You can find job ***Ad_Calendars_Backup*** on all environments. This job will backup all calendars to .json file which is located on Control-M server in directory ***/ctm_stor/calendars_backup***. 
-In this directory there are three folders Periodic, Regular and Rule-Based. Each backup is filtered based on the type of the calendar to each folder because it was found that there is issue when you want to export two calendars with the same name to one .json file. 
+In case that some calendars will be accidentaly deleted we developed API solution for backup of calendars. Calendars are stored in ***/ctm_stor/calendars_backup***.
+In this directory there are three folders Periodic, Regular and Rule-Based. Each backup is filtered based on the type of the calendar to each folder and stored to these directories because it was found that there is issue when you want to export two calendars with the same name to one .json file. 
 Backups are named by environement and date of creation for example ***ctmtest1_231116_Calendars.json***. 
 
  
